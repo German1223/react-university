@@ -7,10 +7,6 @@ const Header = memo(() => {
     const location = useLocation();
     const [menu, setMenu] = useState(false);
 
-    useEffect(() => {
-        console.log(menu);
-    }, [menu]);
-
     return (
         <header>
             <div className="logo_container">
