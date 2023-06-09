@@ -1,0 +1,40 @@
+
+.slider_img {
+  width: 700px;
+  height: 450px;
+  border-radius: 20px;
+}
+.slider {
+  position: relative;
+}
+
+.slider_left,
+.slider_right {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.slider_left {
+  left: 1em;
+}
+.slider_right {
+  right: 1em;
+}
+
+
+
+
+.slider_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
