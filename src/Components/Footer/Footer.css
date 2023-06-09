@@ -47,6 +47,10 @@ footer {
   cursor: pointer;
 }
 
+.footer_number {
+  font-size: 17px;
+}
+
 @media screen and (max-width: 428px) {
   .footer_cont {
     flex-direction: column;

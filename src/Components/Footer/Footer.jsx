@@ -39,7 +39,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <div>+38(030)2747077</div>
+                    <div className="footer_number">+38(030)2747077</div>
                 </div>
             </div>
             <div className="reserved_text">

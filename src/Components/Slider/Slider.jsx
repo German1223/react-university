@@ -48,15 +48,12 @@ const Slider = () => {
         [slider]
     );
 
-    // useEffect(() => {
-    //   const interval = setInterval(() => {  
-    //     handleSlider("right")
-    //   }, 3000)
-    //   return () => clearInterval(interval)
-    // },[slider,handleSlider])
-
-
-    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleSlider("right");
+        }, 3000);
+        return () => clearInterval(interval);
+    }, [slider, handleSlider]);
 
     return (
         <div className="wrapper slider_container">
