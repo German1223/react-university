@@ -19,6 +19,11 @@
 
 .contacts_section > h3 {
   margin-left: 40px;
+  font-weight: 600;
+font-size: 22px;
+line-height: 24px;
+
+color: #000000;
 }
 
 .contacts_img {
@@ -32,9 +37,14 @@
   flex-direction: row;
   align-items: center;
   margin: 10px 0;
+  font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+
+color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 988px) {
   .contactscontainer_cont {
     flex-direction: column;
     margin-bottom: 30px;

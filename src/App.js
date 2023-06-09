@@ -7,6 +7,7 @@ import Contacts from './Pages/Contacts/Contacts';
 
 function App() {
   return (
+    
     <Routes>
       <Route path='/' element={<Main/>}/>
       <Route path='/photos' element={<Photos/>}/>

@@ -79,7 +79,7 @@ const Header = memo(() => {
                 }
             >
                 <Link
-                    className="navigation_link"
+                    className="navigation_link_burger"
                     to={"/"}
                     style={
                         location.pathname === "/"
@@ -90,7 +90,7 @@ const Header = memo(() => {
                     <div>Головна</div>
                 </Link>
                 <Link
-                    className="navigation_link"
+                    className="navigation_link_burger"
                     to={"/photos"}
                     style={
                         location.pathname === "/photos"
@@ -100,14 +100,14 @@ const Header = memo(() => {
                 >
                     <div>Галерея</div>
                 </Link>
-                <Link className="navigation_link" to={"/news"} style={
+                <Link className="navigation_link_burger" to={"/news"} style={
                         location.pathname === "/news"
                             ? { borderBottom: "2px solid" }
                             : {}
                     }>
                     <div>Новини</div>
                 </Link>
-                <Link className="navigation_link" to={"/contacts"} style={
+                <Link className="navigation_link_burger" to={"/contacts"} style={
                         location.pathname === "/contacts"
                             ? { borderBottom: "2px solid" }
                             : {}

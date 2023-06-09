@@ -48,12 +48,12 @@ const Slider = () => {
         [slider]
     );
 
-    useEffect(() => {
-      const interval = setInterval(() => {  
-        handleSlider("right")
-      }, 5000)
-      return () => clearInterval(interval)
-    },[slider,handleSlider])
+    // useEffect(() => {
+    //   const interval = setInterval(() => {  
+    //     handleSlider("right")
+    //   }, 3000)
+    //   return () => clearInterval(interval)
+    // },[slider,handleSlider])
 
 
     
@@ -61,18 +61,14 @@ const Slider = () => {
     return (
         <div className="wrapper slider_container">
             <div className="slider">
-                <img
-                    className="slider_left"
-                    src="img/slider/left.svg"
-                    onClick={() => handleSlider("left")}
-                />
                 <div>
                     <AnimatePresence>
                         <motion.img
                             className="slider_img"
                             src={dataSlider[slider].img}
                             key={dataSlider[slider].img}
-                            initial={{ opacity: 1 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
                             drag="x"
                             dragConstraints={{ left: 0, right: 0 }}
                             onDragEnd={(e, { offset, velocity }) => {
@@ -86,6 +82,11 @@ const Slider = () => {
                         ></motion.img>
                     </AnimatePresence>
                 </div>
+                <img
+                    className="slider_left"
+                    src="img/slider/left.svg"
+                    onClick={() => handleSlider("left")}
+                />
                 <img
                     className="slider_right"
                     src="img/slider/right.svg"
